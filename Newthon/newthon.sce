@@ -14,7 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-function u = newthon(f, fder1, fder2, a, b)
+function u = newton(f, fder1, fder2, a, b)
     u = 0
     // f é a função passada como uma string, assim como
     // suas derivadas primeira e segunda.
@@ -70,7 +70,6 @@ function u = newthon(f, fder1, fder2, a, b)
     printf("Número de iterações:%d \n", iter_count)
     u = x
     plot([1 : 1 : length(xresult)], xresult, '--rs', 'LineWidth', 2)
-    
 endfunction
 
 
